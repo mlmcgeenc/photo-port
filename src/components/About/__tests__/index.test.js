@@ -6,12 +6,12 @@ import About from '..';
 afterEach(cleanup);
 
 describe('About component', () => {
-	// First Test
+	 // baseline test
 	it('renders', () => {
 		render(<About />);
 	});
 
-	// Second Test
+	// snapshot test
 	it('matches snapshot DOM node structure', () => {
 		// render About
 		const { asFragment } = render(<About />);
